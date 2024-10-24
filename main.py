@@ -4,23 +4,23 @@ import pickle as pkl
 
 
 # Load label encoders
-le_ST_Slope = pkl.load(open('encoding/ST_Slope_le.pkl','rb'))
-le_ChestPainType = pkl.load(open('encoding/ChestPainType_le.pkl','rb'))
-le_RestingECG = pkl.load(open('encoding/RestingECG_le.pkl','rb'))
+le_ST_Slope = pkl.load(open('ST_Slope_le.pkl','rb'))
+le_ChestPainType = pkl.load(open('ChestPainType_le.pkl','rb'))
+le_RestingECG = pkl.load(open('RestingECG_le.pkl','rb'))
 
 # Load the scaler and models
-scaler = pkl.load(open('scale/scaler.pkl', 'rb'))
+scaler = pkl.load(open('scaler.pkl', 'rb'))
 models = {
-    'Decision Tree': pkl.load(open('model/Decision_Tree.pkl', 'rb')),
-    'Logistic Regression': pkl.load(open('model/Logistic_Regression.pkl', 'rb')),
-    'SVC':pkl.load(open('model/svc.pkl','rb')),
-    'KNN': pkl.load(open('model/KNN.pkl', 'rb')),
-    'Naive Bayes': pkl.load(open('model/Naive_bayes.pkl', 'rb')),
-    'Random Forest': pkl.load(open('model/Random_forest.pkl', 'rb')),
-    'Gradient Boosting': pkl.load(open('model/Gradient_boosting.pkl', 'rb')),
-    'XGBoost' : pkl.load(open('model/xgboost.pkl','rb')),
-    'AdaBoost': pkl.load(open('model/AdaBoost.pkl', 'rb')),
-    'Stacking' : pkl.load(open('model/Stacking.pkl','rb'))
+    'Decision Tree': pkl.load(open('Decision_Tree.pkl', 'rb')),
+    'Logistic Regression': pkl.load(open('Logistic_Regression.pkl', 'rb')),
+    'SVC':pkl.load(open('svc.pkl','rb')),
+    'KNN': pkl.load(open('KNN.pkl', 'rb')),
+    'Naive Bayes': pkl.load(open('Naive_bayes.pkl', 'rb')),
+    'Random Forest': pkl.load(open('Random_forest.pkl', 'rb')),
+    'Gradient Boosting': pkl.load(open('Gradient_boosting.pkl', 'rb')),
+    'XGBoost' : pkl.load(open('xgboost.pkl','rb')),
+    'AdaBoost': pkl.load(open('AdaBoost.pkl', 'rb')),
+    'Stacking' : pkl.load(open('Stacking.pkl','rb'))
 }
 
 # Streamlit app
